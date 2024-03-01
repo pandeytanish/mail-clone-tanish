@@ -12,7 +12,7 @@ return (
                   <div class="footer-group">
                     <span> 0 GB of 15 GB used</span> 
                     <span>
-                      <img src="/app/assets/icons/open_in_new_black_24dp.svg" alt="Google drive storage" class="btn-icon-alt btn-icon-sm"/>
+                      <img src="./icons/open_in_new_black_24dp.svg" alt="Google drive storage" class="btn-icon-alt btn-icon-sm"/>
                     </span>
                   </div>
 

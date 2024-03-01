@@ -3,7 +3,7 @@ const Body = () => {
 <>
 <section class="inbox" >
       
-      {/* <!-- MAIL --> */}
+     
 
       <div class="inbox-menu">
 
@@ -11,20 +11,20 @@ const Body = () => {
 
           <div class="inbox-btn-group" >
             <button class="btn-alt">
-              <img src="/app/assets/icons/check_box_outline_blank_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+              <img src="./icons/check_box_outline_blank_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
             </button>
 
             <button class="btn-sm btn-alt">
-              <img src="/app/assets/icons/arrow_drop_down_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+              <img src="./icons/arrow_drop_down_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
             </button>
           </div>
 
           <button class="btn">
-            <img src="/app/assets/icons/refresh_black_24dp.svg" alt="Refresh" class="btn-icon btn-icon-sm btn-icon-alt btn-icon-hover"/>
+            <img src="./icons/refresh_black_24dp.svg" alt="Refresh" class="btn-icon btn-icon-sm btn-icon-alt btn-icon-hover"/>
           </button>
 
           <button class="btn">
-            <img src="/app/assets/icons/more_vert_black_20dp.png" alt="More" class="btn-icon btn-icon-sm btn-icon-alt btn-icon-hover"/>
+            <img src="./icons/more_vert_black_20dp.png" alt="More" class="btn-icon btn-icon-sm btn-icon-alt btn-icon-hover"/>
           </button>
 
         </div>
@@ -39,21 +39,21 @@ const Body = () => {
 
           <div class="inbox-menu-pagination-btn">
             <button class="btn btn-nofill btn-pagination">
-              <img src="/app/assets/icons/chevron_left_black_24dp.svg" alt="Newer" class="btn-icon-sm btn-icon-alt"/>
+              <img src="./icons/chevron_left_black_24dp.svg" alt="Newer" class="btn-icon-sm btn-icon-alt"/>
             </button>
 
             <button class="btn btn-pagination">
-              <img src="/app/assets/icons/chevron_right_black_24dp.svg" alt="Older" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+              <img src="./icons/chevron_right_black_24dp.svg" alt="Older" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
             </button>
           </div>
 
           <div class="inbox-btn-group" >
             <button class="btn-alt">
-              <img src="/app/assets/icons/keyboard_black_24dp.svg" alt="Input tools on/off" class="btn-icon-sm btn-icon-alt" />
+              <img src="./icons/keyboard_black_24dp.svg" alt="Input tools on/off" class="btn-icon-sm btn-icon-alt" />
             </button>
 
             <button class="btn-sm btn-alt">
-              <img src="/app/assets/icons/arrow_drop_down_black_24dp.svg" alt="Select input tool" class="btn-icon-sm btn-icon-alt"/>
+              <img src="./icons/arrow_drop_down_black_24dp.svg" alt="Select input tool" class="btn-icon-sm btn-icon-alt"/>
             </button>
           </div>
 
@@ -82,7 +82,6 @@ const Body = () => {
 
         </div>
 
-        {/* <!-- MAIL CONTENT --> */}
         
         <div class="content">
           <div class="mail">
@@ -91,18 +90,18 @@ const Body = () => {
 
                 <div class="checkbox"  >
                   <button class="btn">
-                    <img src="/app/assets/icons/check_box_outline_blank_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
+                    <img src="./icons/check_box_outline_blank_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
                   </button>
                 </div>
 
                 <div class="message-group-hidden">
                   <button class="btn-alt btn-nofill drag-indicator" >
-                    <img src="/app/assets/icons/drag_indicator_black_24dp.svg" alt="Drag" class="btn-icon-sm btn-icon-alt btn-icon-disabled" />
+                    <img src="./icons/drag_indicator_black_24dp.svg" alt="Drag" class="btn-icon-sm btn-icon-alt btn-icon-disabled" />
                   </button>
                 </div>
 
                 <button class="btn star" >
-                  <img src="/app/assets/icons/star_border_black_24dp.svg" alt="Not starred" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
+                  <img src="./icons/star_border_black_24dp.svg" alt="Not starred" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
                 </button>
 
                 <div class="message-default" >
@@ -132,19 +131,19 @@ const Body = () => {
                 <div class="message-group-hidden" >
                   <div class="inbox-message-item-options">
                     <button class="btn">
-                      <img src="/app/assets/icons/archive_black_24dp.svg" alt="Archive" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+                      <img src="./icons/archive_black_24dp.svg" alt="Archive" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
                     </button>
       
                     <button class="btn">
-                      <img src="/app/assets/icons/delete_black_24dp.svg" alt="Delete" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+                      <img src="./icons/delete_black_24dp.svg" alt="Delete" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
                     </button>
       
                     <button class="btn">
-                      <img src="/app/assets/icons/mark_as_unread_black_24dp.svg" alt="Mark as unread" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+                      <img src="./icons/mark_as_unread_black_24dp.svg" alt="Mark as unread" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
                     </button>
       
                     <button class="btn">
-                      <img src="/app/assets/icons/access_time_filled_black_24dp.svg" alt="Snooze" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+                      <img src="./icons/access_time_filled_black_24dp.svg" alt="Snooze" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
                     </button>
                   </div>
                 </div>
@@ -155,19 +154,19 @@ const Body = () => {
 
                 <div class="checkbox"  >
                   <button class="btn">
-                    <img src="/app/assets/icons/check_box_outline_blank_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
+                    <img src="./icons/check_box_outline_blank_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
                   </button>
                 </div>
 
                 <div class="message-group-hidden">
                   <button class="btn-alt btn-nofill drag-indicator" >
-                    <img src="/app/assets/icons/drag_indicator_black_24dp.svg" alt="Drag" class="btn-icon-sm btn-icon-alt btn-icon-disabled" />
+                    <img src="./icons/drag_indicator_black_24dp.svg" alt="Drag" class="btn-icon-sm btn-icon-alt btn-icon-disabled" />
                   </button>
                 </div>
 
                 <div >
                   <button class="btn star" >
-                    <img src="/app/assets/icons/star_border_black_24dp.svg" alt="Not starred" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
+                    <img src="./icons/star_border_black_24dp.svg" alt="Not starred" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
                   </button>
                 </div>
 
@@ -198,19 +197,19 @@ const Body = () => {
                 <div class="message-group-hidden" >
                   <div class="inbox-message-item-options">
                     <button class="btn">
-                      <img src="/app/assets/icons/archive_black_24dp.svg" alt="Archive" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+                      <img src="./icons/archive_black_24dp.svg" alt="Archive" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
                     </button>
       
                     <button class="btn">
-                      <img src="/app/assets/icons/delete_black_24dp.svg" alt="Delete" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+                      <img src="./icons/delete_black_24dp.svg" alt="Delete" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
                     </button>
       
                     <button class="btn">
-                      <img src="/app/assets/icons/mark_as_unread_black_24dp.svg" alt="Mark as unread" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+                      <img src="./icons/mark_as_unread_black_24dp.svg" alt="Mark as unread" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
                     </button>
       
                     <button class="btn">
-                      <img src="/app/assets/icons/access_time_filled_black_24dp.svg" alt="Snooze" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+                      <img src="./icons/access_time_filled_black_24dp.svg" alt="Snooze" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
                     </button>
                   </div>
                 </div>
@@ -221,19 +220,19 @@ const Body = () => {
 
                 <div class="checkbox"  >
                   <button class="btn">
-                    <img src="/app/assets/icons/check_box_outline_blank_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
+                    <img src="./icons/check_box_outline_blank_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
                   </button>
                 </div>
 
                 <div class="message-group-hidden">
                   <button class="btn-alt btn-nofill drag-indicator" >
-                    <img src="/app/assets/icons/drag_indicator_black_24dp.svg" alt="Drag" class="btn-icon-sm btn-icon-alt btn-icon-disabled"/>
+                    <img src="./icons/drag_indicator_black_24dp.svg" alt="Drag" class="btn-icon-sm btn-icon-alt btn-icon-disabled"/>
                   </button>
                 </div>
 
                 <div >
                   <button class="btn star" >
-                    <img src="/app/assets/icons/star_border_black_24dp.svg" alt="Not starred" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
+                    <img src="./icons/star_border_black_24dp.svg" alt="Not starred" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
                   </button>
                 </div>
 
@@ -264,19 +263,19 @@ const Body = () => {
                 <div class="message-group-hidden" >
                   <div class="inbox-message-item-options">
                     <button class="btn">
-                      <img src="/app/assets/icons/archive_black_24dp.svg" alt="Archive" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+                      <img src="./icons/archive_black_24dp.svg" alt="Archive" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
                     </button>
       
                     <button class="btn">
-                      <img src="/app/assets/icons/delete_black_24dp.svg" alt="Delete" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+                      <img src="./icons/delete_black_24dp.svg" alt="Delete" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
                     </button>
       
                     <button class="btn">
-                      <img src="/app/assets/icons/mark_as_unread_black_24dp.svg" alt="Mark as unread" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+                      <img src="./icons/mark_as_unread_black_24dp.svg" alt="Mark as unread" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
                     </button>
       
                     <button class="btn">
-                      <img src="/app/assets/icons/access_time_filled_black_24dp.svg" alt="Snooze" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+                      <img src="./icons/access_time_filled_black_24dp.svg" alt="Snooze" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
                     </button>
                   </div>
                 </div>
@@ -285,7 +284,7 @@ const Body = () => {
 
           </div>
 
-          {/* <!-- FOOTER --> */}
+
 
 
 

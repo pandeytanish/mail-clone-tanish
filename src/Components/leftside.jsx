@@ -5,7 +5,7 @@ const Leftside = () => {
 
 <div class="left-sidebar-compose">
   <button class="sidebar-btn-compose">
-    <img src="/app/assets/icons/create_32dp.png" alt="Compose a new email" class="sidebar-btn-compose-icon"/>
+    <img src="./icons/create_32dp.png" alt="Compose a new email" class="sidebar-btn-compose-icon"/>
     <span class="sidebar-btn-compose-title">Compose</span>
   </button>
 </div>
@@ -117,11 +117,11 @@ const Leftside = () => {
 <div class="left-sidebar-footer">
 
   <button class="btn btn-sidebar">
-    <img src="app/assets/icons/person_black_24dp.svg" class="btn-icon-sidebar btn-icon-sm"/>
+    <img src="./icons/person_black_24dp.svg" class="btn-icon-sidebar btn-icon-sm"/>
   </button>
 
   <button class="btn btn-sidebar active">
-    <img src="app/assets/icons/hangout_black_20dp.png" class="btn-icon-sidebar btn-icon-sm active"/>
+    <img src="./icons/hangout_black_20dp.png" class="btn-icon-sidebar btn-icon-sm active"/>
   </button>
 
 </div>

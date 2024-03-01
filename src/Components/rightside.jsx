@@ -7,25 +7,25 @@ const Rightside = () => {
 
   <div class="app-item">
     <button class="btn">
-      <img src="app/assets/icons/calendar_2020q4_2x.png" alt="Calendar" class="btn-icon btn-icon-sm"/>
+      <img src="./icons/calendar_2020q4_2x.png" alt="Calendar" class="btn-icon btn-icon-sm"/>
     </button>
   </div>
 
   <div class="app-item">
     <button class="btn">
-      <img src="app/assets/icons/keep_2020q4v3_2x.png" alt="Keep" class="btn-icon btn-icon-sm"/>
+      <img src="./icons/keep_2020q4v3_2x.png" alt="Keep" class="btn-icon btn-icon-sm"/>
     </button>
   </div>
 
   <div class="app-item">
     <button class="btn">
-      <img src="app/assets/icons/tasks2_2x.png" alt="Tasks" class="btn-icon btn-icon-sm"/>
+      <img src="./icons/tasks2_2x.png" alt="Tasks" class="btn-icon btn-icon-sm"/>
     </button>
   </div>
 
   <div class="app-item">
     <button class="btn">
-      <img src="app/assets/icons/contacts_2x.png" alt="Contacts" class="btn-icon btn-icon-sm"/>
+      <img src="./icons/contacts_2x.png" alt="Contacts" class="btn-icon btn-icon-sm"/>
     </button>
   </div>
 
@@ -35,7 +35,7 @@ const Rightside = () => {
 
   <div class="app-item">
     <button class="btn">
-      <img src="app/assets/icons/add_black_24dp.svg" alt="" class="btn-icon btn-icon-sm btn-icon-disabled"/>
+      <img src="./icons/add_black_24dp.svg" alt="" class="btn-icon btn-icon-sm btn-icon-disabled"/>
     </button>
   </div>
 
@@ -43,7 +43,7 @@ const Rightside = () => {
 
 
 <button class="btn">
-  <img src="./app/assets/icons/chevron_right_black_24dp.svg" alt="" class="btn-icon btn-icon-sm btn-icon-alt" />
+  <img src="./icons/chevron_right_black_24dp.svg" alt="" class="btn-icon btn-icon-sm btn-icon-alt" />
 </button>
 
 </section>
