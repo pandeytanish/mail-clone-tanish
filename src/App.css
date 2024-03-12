@@ -342,6 +342,10 @@ input[type="search"]::-webkit-search-cancel-button {
 	fill: var(--red);
 	opacity: 1;
 }
+.category-item.active .category-item-icon {
+	fill: var(--red);
+	opacity: 1;
+}
 
 .left-sidebar-connect {
 	overflow: hidden;
