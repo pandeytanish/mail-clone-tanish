@@ -107,17 +107,17 @@ const Inbox = () => {
                 <div class="message-default" >
 
                   <div class="message-sender message-content unread" >
-                    <span >Cascadom</span>
+                    <span >Myntra</span>
                   </div>
       
                   <div class="message-subject message-content unread">
-                    <span>Dev Horror Stories: 👻 2000 lines of inline styles</span>
+                    <span>Trail-Blazers Assemble! 🏂</span>
                   </div>
 
                   <div class="message-seperator message-content"> - </div>
 
                   <div class="message-body message-content">
-                    <span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta error beatae optio ea, quod harum. Iure ab sed, dolores eos repudiandae inventore magnam id modi blanditiis harum at. Facere, exercitationem.</span>
+                    <span>Get The Hottest Looks, Right Here visit myntra for more fashion related stuff</span>
                   </div>
                   
                   <div class="gap message-content" > &nbsp; </div>
@@ -174,17 +174,17 @@ const Inbox = () => {
                 <div class="message-default" >
 
                   <div class="message-sender message-content" >
-                    <span >Mr. President</span>
+                    <span >Reliance Digital </span>
                   </div>
       
                   <div class="message-subject message-content">
-                    <span>Thanks for Saving the World</span>
+                    <span>Offer valid only for 3 days | OnePlus Audio</span>
                   </div>
 
                   <div class="message-seperator message-content"> - </div>
 
                   <div class="message-body message-content">
-                    <span> Party at my crib next weekend, amet consectetur adipisicing elit. Soluta error beatae optio ea, quod harum. Iure ab sed, dolores eos repudiandae inventore magnam id modi blanditiis harum at. Facere, exercitationem.</span>
+                    <span>Additional up to Rs. 150 Disscount with ICICI Card  </span>
                   </div>
                   
                   <div class="gap message-content" > &nbsp; </div>
@@ -240,17 +240,17 @@ const Inbox = () => {
                 <div class="message-default" >
 
                   <div class="message-sender message-content" >
-                    <span >Spotify</span>
+                    <span >Airtel</span>
                   </div>
       
                   <div class="message-subject message-content">
-                    <span>🎉 💰 New Job who this? </span>
+                    <span>Bill for your Airtel Black account - Mar'24 </span>
                   </div>
 
                   <div class="message-seperator message-content"> - </div>
 
                   <div class="message-body message-content">
-                    <span> Hello, Habib! We are glad to break the news to you, amet consectetur adipisicing elit. Soluta error beatae optio ea, quod harum. Iure ab sed, dolores eos repudiandae inventore magnam id modi blanditiis harum at. Facere, exercitationem.</span>
+                    <span> Download App download from google playstore and on making first payment get a upi cashback of 50rs</span>
                   </div>
                   
                   <div class="gap message-content" > &nbsp; </div>

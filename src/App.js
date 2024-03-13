@@ -2,7 +2,6 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Header from './Components/header';
 import Leftside from './Components/leftside';
-import Body from './Components/Body';
 import Footer from './Components/Footer';
 import Rightside from './Components/rightside';
 import Starred from './Components/Sub-components/Starred';
