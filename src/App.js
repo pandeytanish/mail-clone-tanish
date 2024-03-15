@@ -21,10 +21,11 @@ function App() {
    const REDIRECT_URL = "http://localhost:3000"
    const SCOPE = "http://www.googleapi.com/auth/gmail.readonly"
    const AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}&response_type=token";
+    window.location.href= AUTH_URL 
   }
   return (
     <>
-      <div class="body-wrapper" >
+      <div className="body-wrapper" >
         {accesstoken ?  (
           <div> 
             <h1>Access token</h1>
