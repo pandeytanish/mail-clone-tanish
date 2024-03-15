@@ -1,6 +1,5 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import { useState } from 'react';
 import Header from './Components/header';
 import Leftside from './Components/leftside';
 import Footer from './Components/Footer';
@@ -10,35 +9,17 @@ import Snoozed from './Components/Sub-components/Snoozed';
 import Sent from './Components/Sub-components/Sent';
 import Drafts from './Components/Sub-components/Drafts';
 import Inbox from './Components/Sub-components/Inbox';
+import Oauth from './Components/Oauth';
 
 
 
 
 function App() {
-  const [accesstoken,setAccesstoken]=useState("")
-  const handleLogin = () => {
-   const CLIENT_ID = "686675426695-cqpmmfkuf1cjhah4fq8d851paeo7g69o.apps.googleusercontent.com"
-   const REDIRECT_URL = "http://localhost:3000"
-   const SCOPE = "http://www.googleapi.com/auth/gmail.readonly"
-   const AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}&response_type=token";
-    window.location.href= AUTH_URL 
-  }
+
   return (
     <>
       <div className="body-wrapper" >
-        {accesstoken ?  (
-          <div> 
-            <h1>Access token</h1>
-            <p>Access Token: {accesstoken}</p>
-            </div>) :(
-              <>
-              <button onClick={handleLogin}>Login with google</button>
-              </>
-            
-            
-
-        )
-            }
+<Oauth/>
         {/* <Header />
         <Leftside />
       <Footer/>
