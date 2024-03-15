@@ -20,7 +20,7 @@ function App() {
    const CLIENT_ID = "686675426695-cqpmmfkuf1cjhah4fq8d851paeo7g69o.apps.googleusercontent.com"
    const REDIRECT_URL = "http://localhost:3000"
    const SCOPE = "http://www.googleapi.com/auth/gmail.readonly"
-   const AUTH_URL = "" 
+   const AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}&response_type=token;" 
   }
   return (
     <>
