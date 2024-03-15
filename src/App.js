@@ -20,7 +20,7 @@ function App() {
    const CLIENT_ID = "686675426695-cqpmmfkuf1cjhah4fq8d851paeo7g69o.apps.googleusercontent.com"
    const REDIRECT_URL = "http://localhost:3000"
    const SCOPE = "http://www.googleapi.com/auth/gmail.readonly"
-   const AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}&response_type=token;" 
+   const AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}&response_type=token";
   }
   return (
     <>
@@ -38,7 +38,7 @@ function App() {
 
         )
             }
-        <Header />
+        {/* <Header />
         <Leftside />
       <Footer/>
       <Rightside/>
@@ -48,7 +48,7 @@ function App() {
         <Route path="/Snoozed" element={<Snoozed/>} />
         <Route path="/Sent" element={<Sent/>} />
         <Route path="/Drafts" element={<Drafts/>} />
-        </Routes>
+        </Routes> */}
 
 
 
