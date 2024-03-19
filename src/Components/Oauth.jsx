@@ -11,7 +11,7 @@ const Oauth = () => {
     const getAccessToken = () => {
         const url = window.location.href
         const token = url.match(/access_token=([^&]+)/)
-        // localStorage.setItem("Token",token[1])
+        localStorage.setItem("Token",token[1])
         console.log("Token is", localStorage.getItem("Token"))
 
     }

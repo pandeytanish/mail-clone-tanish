@@ -16,8 +16,9 @@ function App() {
   return (
     <>
       <div className="body-wrapper" >
-<Oauth/>
-        {/* <Header />
+<Oauth/> 
+        
+         {/* <Header />
         <Leftside />
       <Footer/>
       <Rightside/>
@@ -27,7 +28,7 @@ function App() {
         <Route path="/Snoozed" element={<Snoozed/>} />
         <Route path="/Sent" element={<Sent/>} />
         <Route path="/Drafts" element={<Drafts/>} />
-        </Routes> */}
+        </Routes>  */}
 
 
 
