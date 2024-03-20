@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-const Oauth = () => {
+function Login () {
+    
     const [accessToken, setAccessToken] = useState("")
     const handleLogin = () => {
         const CLIENT_ID = "686675426695-cqpmmfkuf1cjhah4fq8d851paeo7g69o.apps.googleusercontent.com"
@@ -31,11 +32,15 @@ const Oauth = () => {
         }
         fetch(url,options)
         .then(response => response.json())
-        .then(json=>console.log("Message" ,json))
+        .then(json=>fetchMail(json.messages))
         .catch(error=>console.log('Error in fetching mails',error))
     }
 
 const fetchMail = (id) => {
+    console.log("message id is" ,id)
+    for (let message_id of id.slice(0,10)){
+        console.log("message id is",message_id.id)
+    }
     // let id = '18e462bcf161bc72'
     let token = localStorage.getItem("Token")
     const options = {
@@ -45,16 +50,15 @@ const fetchMail = (id) => {
             'Content-Type':'application/json'
         }
     }
-    let url =  `https://gmail.googleapis.com/gmail/v1/users/me/messages/${id}`
-    fetch(url,options)
-    .then(response => response.json())
-    .then(json=>console.log(json))
-    .catch(error=>console.log('Error in fetching mails',error))
+    // let url =  `https://gmail.googleapis.com/gmail/v1/users/me/messages/${id}`
+    // fetch(url,options)
+    // .then(response => response.json())
+    // .then(json=>console.log(json))
+    // .catch(error=>console.log('Error in fetching mails',error))
 }
-
     return (
-
-        <div>
+        <>
+          <div>
             {accessToken ? (
                 <div>
                     <h1>Access token</h1>
@@ -64,17 +68,12 @@ const fetchMail = (id) => {
                     <button onClick={handleLogin}>Login with google</button>
                     <button onClick={() => getEmailData()}> Get Emails</button>
                     <button onClick={() => fetchMail("18e462bcf161bc72")}> Fetch Emails</button>
-
-
                 </>
-
             )
-
             }
-
         </div>
+        </>
     )
+}
 
-
-};
-export default Oauth;
+export default Login

@@ -13,20 +13,21 @@ const Leftside = () => {
 
 <div class="left-siderbar-label">
   <ul class="labels category-item-list">
-
+<Link to="/Inbox">
     <li class="category-item active">
       <div>
         <svg class="category-item-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H4.99c-1.11 0-1.98.89-1.98 2L3 19c0 1.1.88 2 1.99 2H19c1.1 0 2-.9 2-2V5c0-1.11-.9-2-2-2zm0 12h-4c0 1.66-1.35 3-3 3s-3-1.34-3-3H4.99V5H19v10z"/></svg>
-        <Link to="/Inbox" class="category-item-title">Inbox</Link>
+        <span class="category-item-title">Inbox</span>
       </div>
       <span class="category-item-number" >32</span>
     </li>
+    </Link>
 
     <li class="category-item">
       <div>
         <svg class="category-item-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
       
-       <Link to="/Starred" class="category-item-title">Starred</Link>
+       <span class="category-item-title">Starred</span>
         
       </div>
       <span class="category-item-number">5</span>
@@ -36,25 +37,26 @@ const Leftside = () => {
       <div>
         <svg class="category-item-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M11.99,2C6.47,2,2,6.48,2,12s4.47,10,9.99,10C17.52,22,22,17.52,22,12S17.52,2,11.99,2z M15.29,16.71L11,12.41V7h2v4.59 l3.71,3.71L15.29,16.71z"/></g></svg>
 
-        <Link to="/Snoozed" class="category-item-title">Snoozed</Link>
+      <span class="category-item-title">Snoozed</span>
       </div>
       <span class="category-item-number"></span>
     </li>
-
+    <Link to="/Sent">
     <li class="category-item">
       <div>
         <svg class="category-item-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        <span class="category-item-title">Sent</span>
         
-        <Link to="/Sent" class="category-item-title">Sent</Link>
       </div>
       <span class="category-item-number"></span>
     </li>
+    </Link>
 
     <li class="category-item">
       <div>
         <svg class="category-item-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/></svg>
         
-        <Link to="/Drafts" class="category-item-title">Drafts</Link>
+      <span class="category-item-title">Drafts</span>
       </div>
       <span class="category-item-number"></span>
     </li>
