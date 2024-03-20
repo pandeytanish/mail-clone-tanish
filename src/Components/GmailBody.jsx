@@ -30,20 +30,20 @@ function GmailBody ({params}) {
 
     <div class="inbox-btn-group" >
       <button class="btn-alt">
-        <img src="/app/assets/icons/check_box_outline_blank_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+        <img src="./icons/check_box_outline_blank_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
       </button>
 
       <button class="btn-sm btn-alt">
-        <img src="/app/assets/icons/arrow_drop_down_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+        <img src="./icons/arrow_drop_down_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
       </button>
     </div>
 
     <button class="btn">
-      <img src="/app/assets/icons/refresh_black_24dp.svg" alt="Refresh" class="btn-icon btn-icon-sm btn-icon-alt btn-icon-hover"/>
+      <img src="./icons/refresh_black_24dp.svg" alt="Refresh" class="btn-icon btn-icon-sm btn-icon-alt btn-icon-hover"/>
     </button>
 
     <button class="btn">
-      <img src="/app/assets/icons/more_vert_black_20dp.png" alt="More" class="btn-icon btn-icon-sm btn-icon-alt btn-icon-hover"/>
+      <img src="./icons/more_vert_black_20dp.png" alt="More" class="btn-icon btn-icon-sm btn-icon-alt btn-icon-hover"/>
     </button>
 
   </div>
@@ -58,21 +58,21 @@ function GmailBody ({params}) {
 
     <div class="inbox-menu-pagination-btn">
       <button class="btn btn-nofill btn-pagination">
-        <img src="/app/assets/icons/chevron_left_black_24dp.svg" alt="Newer" class="btn-icon-sm btn-icon-alt"/>
+        <img src="./icons/chevron_left_black_24dp.svg" alt="Newer" class="btn-icon-sm btn-icon-alt"/>
       </button>
 
       <button class="btn btn-pagination">
-        <img src="/app/assets/icons/chevron_right_black_24dp.svg" alt="Older" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
+        <img src="./icons/chevron_right_black_24dp.svg" alt="Older" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
       </button>
     </div>
 
     <div class="inbox-btn-group" >
       <button class="btn-alt">
-        <img src="/app/assets/icons/keyboard_black_24dp.svg" alt="Input tools on/off" class="btn-icon-sm btn-icon-alt"/>
+        <img src="./icons/keyboard_black_24dp.svg" alt="Input tools on/off" class="btn-icon-sm btn-icon-alt"/>
       </button>
 
       <button class="btn-sm btn-alt">
-        <img src="/app/assets/icons/arrow_drop_down_black_24dp.svg" alt="Select input tool" class="btn-icon-sm btn-icon-alt"/>
+        <img src="./icons/arrow_drop_down_black_24dp.svg" alt="Select input tool" class="btn-icon-sm btn-icon-alt"/>
       </button>
     </div>
 
@@ -116,7 +116,7 @@ function GmailBody ({params}) {
             <div class="footer-group">
               <span> 0 GB of 15 GB used</span> 
               <span>
-                <img  src="/app/assets/icons/open_in_new_black_24dp.svg" alt="Google drive storage" class="btn-icon-alt btn-icon-sm"/>
+                <img  src="./icons/open_in_new_black_24dp.svg" alt="Google drive storage" class="btn-icon-alt btn-icon-sm"/>
               </span>
             </div>
 

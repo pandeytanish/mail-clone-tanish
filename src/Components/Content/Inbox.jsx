@@ -1,4 +1,53 @@
+import { useEffect } from "react";
 const Inbox = () => {
+
+  useEffect(() => {   
+    const url = window.location.href
+    const token = url.match(/access_token=([^&]+)/)
+    localStorage.setItem("Token",token && token[1])
+    getEmailData()
+  }, [])
+
+  const getEmailData = () => {
+    let token = localStorage.getItem("Token")
+    console.log("hello", token)
+    let url = "https://gmail.googleapis.com/gmail/v1/users/me/messages"
+    const options = {
+        method : 'GET',
+        headers : {
+            'Authorization' : `Bearer ${token}`,
+            'Content-Type':'application/json'
+        }
+    }
+    fetch(url,options)
+    .then(response => response.json())
+    .then(json=>fetchMail(json.messages))
+    .catch(error=>console.log('Error in fetching mails',error))
+}
+
+const fetchMail = (id) => {
+console.log("message id is" ,id)
+
+// let id = '18e462bcf161bc72'
+let token = localStorage.getItem("Token")
+const options = {
+    method : 'GET',
+    headers : {
+        'Authorization' : `Bearer ${token}`,
+        'Content-Type':'application/json'
+    }
+}
+for (let message_id of id.slice(0,10)){
+    
+        let url =  `https://gmail.googleapis.com/gmail/v1/users/me/messages/${message_id.id}`
+fetch(url,options)
+.then(response => response.json())
+.then(json=>console.log("mails data is ===",json))
+.catch(error=>console.log('Error in fetching mails',error))
+}
+}
+
+
     return(
 <>
 <div class="content">
