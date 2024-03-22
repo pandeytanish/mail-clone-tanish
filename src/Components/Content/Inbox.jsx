@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 const Inbox = () => {
-
+  const [data,setData] = useState([])
   useEffect(() => {   
     const url = window.location.href
     const token = url.match(/access_token=([^&]+)/)
@@ -37,21 +37,35 @@ const options = {
         'Content-Type':'application/json'
     }
 }
-for (let message_id of id.slice(0,10)){
-    
-        let url =  `https://gmail.googleapis.com/gmail/v1/users/me/messages/${message_id.id}`
-fetch(url,options)
-.then(response => response.json())
-.then(json=>console.log("mails data is ===",json))
+let mailData = []
+id.slice(0,10).map((value,index)=>{
+  let url =  `https://gmail.googleapis.com/gmail/v1/users/me/messages/${value.id}`
+  fetch(url,options)
+  .then(response => response.json())
+  .then(json=>{mailData.push(json)
+  console.log("index",index)
+  })
 .catch(error=>console.log('Error in fetching mails',error))
-}
+} )
+// for (let message_id of id.slice(0,10)){
+    
+//         let url =  `https://gmail.googleapis.com/gmail/v1/users/me/messages/${message_id.id}`
+// fetch(url,options)
+// .then(response => response.json())
+// .then(json=>console.log(mailData.push(json)))
+// .catch(error=>console.log('Error in fetching mails',error))
+// }
+console.log("email data is", mailData)
+setData(mailData)
 }
 
 
     return(
 <>
+{console.log("static data is" , data)}
 <div class="content">
-          <div class="mail">
+   <div class="mail">
+   {data && data.map(() =>console.log("hello"))}
               
               <div class="inbox-message-item">
 
@@ -250,6 +264,7 @@ fetch(url,options)
               </div>
 
           </div>
+
 
 
 
