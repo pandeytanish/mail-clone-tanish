@@ -1,3 +1,4 @@
+import { getValue } from "@testing-library/user-event/dist/utils";
 import { useEffect, useState } from "react";
 const Inbox = () => {
   const [data,setData] = useState([])
@@ -50,7 +51,7 @@ setData(mailData)
 {console.log("static data is" , data)}
 <div class="content">
    <div class="mail">
-   {data && data.map(() =>(<>              <div class="inbox-message-item">
+   {data && data.map((Value) =>(<>              <div class="inbox-message-item">
                 <div class="checkbox"  >
                   <button class="btn">
                     <img src="./icons/check_box_outline_blank_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
@@ -69,23 +70,23 @@ setData(mailData)
                 <div class="message-default" >
 
                   <div class="message-sender message-content unread" >
-                    <span >Cascadom</span>
+                    <span >{Value.payload.headers.find(item=>item.name == "From").value}</span>
                   </div>
       
                   <div class="message-subject message-content unread">
-                    <span>Dev Horror Stories: 👻 2000 lines of inline styles</span>
+                    <span>{Value.payload.headers.find(item=>item.name == "Subject").value}</span>
                   </div>
 
                   <div class="message-seperator message-content"> - </div>
 
                   <div class="message-body message-content">
-                    <span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta error beatae optio ea, quod harum. Iure ab sed, dolores eos repudiandae inventore magnam id modi blanditiis harum at. Facere, exercitationem.</span>
+                    <span>{Value.snippet}</span>
                   </div>
                   
                   <div class="gap message-content" > &nbsp; </div>
 
                   <div class="message-date center-text unread" >
-                    <span>12:09 AM</span>
+                    <span>{Value.payload.headers.find(item=>item.name == "Date").value}</span>
                   </div>
 
                 </div>
