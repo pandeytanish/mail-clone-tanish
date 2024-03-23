@@ -12,7 +12,6 @@ function App() {
   return (
     <>
       <div className="body-wrapper" >
-        {/* <Oauth/> */}
         <Header />
         <Leftside />
         <Routes>
@@ -21,11 +20,7 @@ function App() {
         <Route path="/Sent" element={<GmailBody params = "Sent"/>} />
         </Routes> 
         <Rightside/>
-
-
-
       </div>
-
     </>
   );
 }

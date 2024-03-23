@@ -1,4 +1,3 @@
-import { getValue } from "@testing-library/user-event/dist/utils";
 import { useEffect, useState } from "react";
 const Inbox = () => {
   const [data,setData] = useState([])
