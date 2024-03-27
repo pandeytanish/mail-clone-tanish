@@ -45,7 +45,7 @@ const  message_data = await responce.json();
 console.log("email data is", mailData)
 setData(mailData)
 }
-const convertTo12HourFormat = (dateString) => {
+const convertToAMPM = (dateString) => {
   const date = new Date(dateString);
   return date.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
 };
@@ -88,8 +88,8 @@ const convertTo12HourFormat = (dateString) => {
                   
                   <div class="gap message-content" > &nbsp; </div>
 
-                  <div class="message-date center-text unread" >
-                    <span>{convertTo12HourFormat(Value.payload.headers.find(item=>item.name == "Date").value)}</span>
+                  <div class="message-date center-text unread" > 
+                    <span>{convertToAMPM(Value.payload.headers.find(item=>item.name == "Date").value)}</span>
                   </div>
 
                 </div>
