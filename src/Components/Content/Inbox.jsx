@@ -45,6 +45,10 @@ const  message_data = await responce.json();
 console.log("email data is", mailData)
 setData(mailData)
 }
+const convertTo12HourFormat = (dateString) => {
+  const date = new Date(dateString);
+  return date.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+};
     return(
 <>
 {console.log("static data is" , data)}
@@ -85,7 +89,7 @@ setData(mailData)
                   <div class="gap message-content" > &nbsp; </div>
 
                   <div class="message-date center-text unread" >
-                    <span>{Value.payload.headers.find(item=>item.name == "Date").value}</span>
+                    <span>{convertTo12HourFormat(Value.payload.headers.find(item=>item.name == "Date").value)}</span>
                   </div>
 
                 </div>
