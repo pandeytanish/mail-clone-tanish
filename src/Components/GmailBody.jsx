@@ -2,6 +2,7 @@
 import Inbox from "./Content/Inbox"
 import Sent from "./Content/Sent"
 import Login from "./Content/Login";
+import Demo from "./Demo";
 
 function GmailBody ({params}) {
   console.log(params)

@@ -4,13 +4,14 @@ const Inbox = () => {
   useEffect(() => {   
     const url = window.location.href
     const token = url.match(/access_token=([^&]+)/)
-    localStorage.setItem("Token",token && token[1])
+    if(token) {
+      localStorage.setItem("Token",token && token[1])
+    }
     getEmailData()
   }, [])
   const getEmailData = () => {
     let token = localStorage.getItem("Token")
-    console.log("hello", token)
-    let url = "https://gmail.googleapis.com/gmail/v1/users/me/messages"
+    let url = "https://gmail.googleapis.com/gmail/v1/users/me/messages?q=in:inbox"
     const options = {
         method : 'GET',
         headers : {
@@ -47,7 +48,7 @@ setData(mailData)
 }
 const convertToAMPM = (dateString) => {
   const date = new Date(dateString);
-  return date.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+  return date.toLocaleTimeString('en-IN', { hour: 'numeric', minute: 'numeric', hour12: true });
 };
     return(
 <>
