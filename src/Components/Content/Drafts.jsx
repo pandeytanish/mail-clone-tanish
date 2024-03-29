@@ -1,6 +1,6 @@
 import useCustom from "../useCustom";
 const Drafts = () => {
-  const data = useCustom("https://gmail.googleapis.com/gmail/v1/users/me/messages?q=in:inbox")
+  const data = useCustom("https://gmail.googleapis.com/gmail/v1/users/me/messages?q=in:drafts")
 const convertToAMPM = (dateString) => {
   const date = new Date(dateString);
   return date.toLocaleTimeString('en-IN', { hour: 'numeric', minute: 'numeric', hour12: true });
