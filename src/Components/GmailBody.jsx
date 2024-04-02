@@ -27,7 +27,7 @@ function GmailBody ({params}) {
   }
     return (
         <>
-                <section class="inbox" >
+      <section class="inbox" >
 
 <div class="inbox-menu">
 
