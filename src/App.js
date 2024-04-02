@@ -3,8 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './Components/header';
 import Leftside from './Components/leftside';
 import Rightside from './Components/rightside';
-import Oauth from './Components/Oauth'
 import GmailBody from './Components/GmailBody';
+
 
 
 
