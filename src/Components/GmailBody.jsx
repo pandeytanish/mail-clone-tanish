@@ -3,6 +3,7 @@ import Inbox from "./Content/Inbox"
 import Sent from "./Content/Sent"
 import Login from "./Content/Login";
 import Drafts from "./Content/Drafts";
+import Compose from "./Compose";
 
 function GmailBody ({params}) {
   console.log(params)
@@ -10,7 +11,7 @@ function GmailBody ({params}) {
     let data ;
     switch(xyz) {
       case 'Inbox' : 
-      data = <Inbox/>
+      data = <Compose/>
       break;
       case 'Sent' :
         data = <Sent/> 

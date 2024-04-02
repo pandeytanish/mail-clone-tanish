@@ -12,7 +12,8 @@ const Sent = () => {
 {console.log("static data is" , data)}
 <div class="content">
    <div class="mail">
-   {data && data.map((Value) =>(<>              <div class="inbox-message-item">
+   {data && data.map((Value) =>(<>
+   <div class="inbox-message-item">
                 <div class="checkbox"  >
                   <button class="btn">
                     <img src="./icons/check_box_outline_blank_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
@@ -31,11 +32,11 @@ const Sent = () => {
                 <div class="message-default" >
 
                   <div class="message-sender message-content unread" >
-                    <span >{Value.payload.headers.find(item=>item.name == "From").value}</span>
+                    <span >{Value.payload.headers.find(item=>item.name === "From").value}</span>
                   </div>
       
                   <div class="message-subject message-content unread">
-                    <span>{Value.payload.headers.find(item=>item.name == "Subject").value}</span>
+                    <span>{Value.payload.headers.find(item=>item.name === "Subject").value}</span>
                   </div>
 
                   <div class="message-seperator message-content"> - </div>
@@ -47,11 +48,9 @@ const Sent = () => {
                   <div class="gap message-content" > &nbsp; </div>
 
                   <div class="message-date center-text unread" > 
-                    <span>{convertToAMPM(Value.payload.headers.find(item=>item.name == "Date").value)}</span>
+                    <span>{convertToAMPM(Value.payload.headers.find(item=>item.name === "Date").value)}</span>
                   </div>
-
                 </div>
-
                 <div class="message-group-hidden" >
                   <div class="inbox-message-item-options">
                     <button class="btn">
@@ -71,9 +70,8 @@ const Sent = () => {
                     </button>
                   </div>
                 </div>
-
-              </div></>))}      
-
+              </div>
+              </>))}      
           </div>
 
 
