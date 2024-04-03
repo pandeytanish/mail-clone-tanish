@@ -49,5 +49,4 @@ setData(mailData)
 }
     return data 
 }
-
 export default useCustom
