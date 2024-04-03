@@ -4,7 +4,7 @@ body {
     background-size: cover;
     font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
   }
-  
+
   .box {
     position: absolute;
     top: 50%;
@@ -13,7 +13,7 @@ body {
     width: 25rem;
     padding: 2.5rem;
     box-sizing: border-box;
-    border: 1px solid #dadce0;
+    border: 1px solid #ebedef;
     -webkit-border-radius: 8px;
     border-radius: 8px;
   }
@@ -37,7 +37,7 @@ body {
   
   .box p {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 410;
     letter-spacing: .1px;
     line-height: 1.5;
     margin-bottom: 25px;

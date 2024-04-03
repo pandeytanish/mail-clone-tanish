@@ -11,7 +11,7 @@ function GmailBody ({params}) {
     let data ;
     switch(xyz) {
       case 'Inbox' : 
-      data = <Compose/>
+      data = <Inbox/>
       break;
       case 'Sent' :
         data = <Sent/> 

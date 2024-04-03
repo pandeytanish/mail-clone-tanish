@@ -6,12 +6,33 @@ const convertToAMPM = (dateString) => {
   const date = new Date(dateString);
   return date.toLocaleTimeString('en-IN', { hour: 'numeric', minute: 'numeric', hour12: true });
 };
+ const deleteMail = async (messageId) => {
+  try {
+    let token = localStorage.getItem("Token");
+    console.log(token)
+    const response = await fetch(`https://gmail.googleapis.com/gmail/v1/users/me/messages/${messageId}`, {
+    method : 'DELETE',
+    headers : {
+        'Authorization' : `Bearer ${token}`,
+        'Content-Type':'application/json'
+    }
+    }) ;
+    if (response.ok) {
+      console.log("Email Deleted Successfully ");
+    } else {
+      console.log("Failed to delete email:", response);
+    }
+  }
+    catch (error) {
+      console.log("Eror deleting mail:" , error)
+    }
+ }
     return(
 <>
 {console.log("static data is" , data)}
 <div class="content">
    <div class="mail">
-   {data && data.map((Value) =>(<>              <div class="inbox-message-item">
+   {data && data.map((Value) =>(<>         <div class="inbox-message-item">
                 <div class="checkbox"  >
                   <button class="btn">
                     <img src="./icons/check_box_outline_blank_black_24dp.svg" alt="Select" class="btn-icon-sm btn-icon-alt btn-icon-hover message-btn-icon"/>
@@ -57,7 +78,7 @@ const convertToAMPM = (dateString) => {
                       <img src="./icons/archive_black_24dp.svg" alt="Archive" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
                     </button>
       
-                    <button class="btn">
+                    <button class="btn" onClick={()=>deleteMail(Value.id)}>
                       <img src="./icons/delete_black_24dp.svg" alt="Delete" class="btn-icon-sm btn-icon-alt btn-icon-hover"/>
                     </button>
       

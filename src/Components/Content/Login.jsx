@@ -5,7 +5,7 @@ function Login () {
     const handleLogin = () => {
         const CLIENT_ID = "397189746034-5cjds5a1h7vauecnhg4uvi74ott42744.apps.googleusercontent.com"
         const REDIRECT_URI = "http://localhost:3000/Inbox"
-        const SCOPE = "https://www.googleapis.com/auth/gmail.readonly  https://www.googleapis.com/auth/gmail.compose"
+        const SCOPE = "https://mail.google.com/"
         const AUTH_URL = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE}&response_type=token`;
         window.location.href = AUTH_URL;
     // };
